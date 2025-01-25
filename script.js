@@ -7,7 +7,7 @@ function saveTodos(){
 }
 // Function to render todos
 function renderTodos(){
-const todoList = document.getElementById("todoList")
+const todoList = document.getElementById("todolist")
 todoList.innerHTML= "";
 const filterTodos = todos.filter((todo)=>{
   if (currentFilter ==='completed') return todo.completed
