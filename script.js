@@ -8,7 +8,7 @@ function saveTodos(){
 // Function to render todos
 function renderTodos(){
 const todoList = document.getElementById("todolist")
-todoList.innerHTML= "";
+todolist.innerHTML= "";
 const filterTodos = todos.filter((todo)=>{
   if (currentFilter ==='completed') return todo.completed
   if (currentFilter ==='pending') return !todo.completed
@@ -36,7 +36,7 @@ filterTodos.forEach((todo , index) => {
   </div>
   `
 
-  todoList.appendChild(li)
+  todolist.appendChild(li)
 })
 }
 // Function to add new todo
